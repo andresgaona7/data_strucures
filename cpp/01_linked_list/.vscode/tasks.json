@@ -9,15 +9,15 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${file}",
-				"${workspaceFolder}/cpp/01_linked_list/src/Node.cpp",
-				"${workspaceFolder}/cpp/01_linked_list/src/LinkedList.cpp",
+				"${workspaceFolder}/src/Node.cpp",
+				"${workspaceFolder}/src/LinkedList.cpp",
 				"-o",
-				"${workspaceFolder}/cpp/01_linked_list/debug/${fileBasenameNoExtension}",
+				"${workspaceFolder}/debug/${fileBasenameNoExtension}",
 				"-I",
-				"${workspaceFolder}/cpp/01_linked_list/include"
+				"${workspaceFolder}/include"
 			],
 			"options": {
-				"cwd": "${workspaceFolder}/cpp/01_linked_list/debug"
+				"cwd": "${workspaceFolder}/debug"
 			},
 			"problemMatcher": [
 				"$gcc"
