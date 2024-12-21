@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "myTask",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"${workspaceFolder}/cpp/01_linked_list/src/Node.cpp",
+				"${workspaceFolder}/cpp/01_linked_list/src/LinkedList.cpp",
+				"-o",
+				"${workspaceFolder}/cpp/01_linked_list/debug/${fileBasenameNoExtension}",
+				"-I",
+				"${workspaceFolder}/cpp/01_linked_list/include"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/cpp/01_linked_list/debug"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++"
+		}
+	]
+}
